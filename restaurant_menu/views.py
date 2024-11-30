@@ -13,4 +13,5 @@ class MenuList(generic.ListView):
 
 class MenuItemDetail(generic.DetailView):
     model = Order
-    template_name = "detail.html"
+    template_name = "details.html"
+    context_object_name = "Order"
